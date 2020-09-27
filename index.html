@@ -8,16 +8,68 @@
     <title>Hugo Chinchilla</title>
     <meta name="title" content="Hugo Chinchilla" />
     <meta name="description" content="I’m Hugo Chinchilla and I live in Majorca (Spain), currently I’m working as a developer at Habitissimo.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style type="text/css">
-      body {text-align: center;background-color:#FFF;font-family: Helvetica, georgia, serif;color:#777;}
-      img {border: 10px solid #EEE;}
-      h1 {margin: 10px;font-size:50px;letter-spacing: -5px;}
-      a{text-decoration: none;color: #5f93cc;}
-      a#habitissimo {display:block;height:67px;background:transparent url(static/img/habitissimo.png) no-repeat 50%;text-indent:-9999px;overflow:hidden;}
-      #links {color: #CCC; margin-top: 40px;}
-      #links a {color: #777;}
-      #by { color: #b5b5b5; position: absolute; bottom: 15px; left: 15px; font-size: 12px; }
+        body {
+            text-align: center;
+            background-color: #FFF;
+            font-family: Helvetica, georgia, serif;
+            color: #777;
+            font-size: 20px;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            display: block;
+            max-width: 96vw;
+            height: auto;
+            margin: 2em auto;
+        }
+        img.me {
+            border: 10px solid #EEE;
+            box-sizing: border-box;
+        }
+        img.employer {
+            max-width: min(80vw, 300px);
+        }
+
+        h1 {
+            margin: 10px;
+            font-size: 3em;
+            letter-spacing: -2px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #5f93cc;
+        }
+
+        #links {
+            color: #CCC;
+            list-style: none;
+            margin: 2em 0 0 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #links li {
+            margin: 1em;
+            padding: 0;
+            text-wrap: none;
+        }
+
+        #links li a {
+            color: #777;
+        }
+
+        #links li a:hover {
+            color: #0c86bb;
+        }
     </style>
     <script type="text/javascript">
        var _gaq = _gaq || [];
@@ -33,23 +85,21 @@
   </head>
   <body>
     <div>
-        <img src="static/img/hugo-chinchilla-v3.jpg" width="320" height="320" alt="That's Me" />
+        <img class="me" src="static/img/hugo-chinchilla-v4.jpg" width="400" height="400" alt="That's Me" />
     </div>
     <p>I am</p>
     <h1><a href="http://blog.hugochinchilla.net" title="Hugo Chinchilla">Hugo Chinchilla</a></h1>
     <p>and i'm working at</p>
     <p>
-        <a href="http://www.habitissimo.es" id="habitissimo" title="Reformas">Habitissimo</a>
+        <img class="employer" src="static/img/habitissimo.png" alt="Habitissimo">
     </p>
 
-    <p id="links">
-        <a href="http://blog.hugochinchilla.net" title="blog">blog</a> |
-        <a href="https://twitter.com/hchinchilla_" title="@ganon">twitter</a> |
-        <a href="https://plus.google.com/101524645529317473464/posts" title="+Hugo Chinchilla">google +</a> |
-        <a href="https://github.com/hugochinchilla" title="code">code</a> |
-        <a href="http://flickr.com/hugoasecas" title="photography">photography</a> |
-        <a href="http://htmlpreview.github.io/?https://raw.githubusercontent.com/hugochinchilla/resume/master/resume.html" title="resume" onclick="javascript:_gaq.push(['_trackPageview','/resume'])">resume</a> |
-        <a href='&#109;a&#105;lto&#58;hu%&#54;7o%61%73ecas&#64;gmail&#46;%63om' onclick="javascript:_gaq.push(['_trackPageview','/contact'])">contact</a>
-    </p>
+    <ul id="links">
+        <li><a href="https://github.com/hugochinchilla" title="github">github</a></li>
+        <li><a href="http://htmlpreview.github.io/?https://raw.githubusercontent.com/hugochinchilla/resume/master/resume.html" title="resume" onclick="javascript:_gaq.push(['_trackPageview','/resume'])">resume</a></li>
+        <li><a href="https://www.linkedin.com/in/hugo-chinchilla-carbonell-569a2a115/" title="Linked in">linked in</a></li>
+        <li><a href='&#109;a&#105;lto&#58;hu%&#54;7o%61%73ecas&#64;gmail&#46;%63om' onclick="javascript:_gaq.push(['_trackPageview','/contact'])">contact</a></li>
+        <li><a href="http://blog.hugochinchilla.net" title="blog">blog</a></li>
+    </ul>
   </body>
 </html>
